@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacote de Softwares</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pacote de Softwares</h1>
+        <div class="ferramentas">
+            <div class="ferramenta">
+                <h2>Gerador</h2>
+                <button onclick="gerarSoftware('gerador')">Gerar</button>
+                <p id="geradorResult"></p>
+            </div>
+            <div class="ferramenta">
+                <h2>Conversor de Peso</h2>
+                <button onclick="converterSoftware('peso')">Converter</button>
+                <p id="pesoResult"></p>
+            </div>
+            <div class="ferramenta">
+                <h2>Conversor de Comprimento</h2>
+                <button onclick="converterSoftware('comprimento')">Converter</button>
+                <p id="comprimentoResult"></p>
+            </div>
+            <div class="ferramenta">
+                <h2>Conversor de Volume</h2>
+                <button onclick="converterSoftware('volume')">Converter</button>
+                <p id="volumeResult"></p>
+            </div>
+            <div class="ferramenta">
+                <h2>Conversor de Temperatura</h2>
+                <button onclick="converterSoftware('temperatura')">Converter</button>
+                <p id="temperaturaResult"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

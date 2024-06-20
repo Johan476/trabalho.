@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Peso e Volume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Peso e Volume</h1>
+
+        <div class="input-section">
+            <h2>De:</h2>
+            <input type="number" id="inputKg" placeholder="Quilogramas">
+            <input type="number" id="inputG" placeholder="Gramas">
+            <input type="number" id="inputL" placeholder="Litros">
+        </div>
+
+        <div class="output-section">
+            <h2>Para:</h2>
+            <input type="number" id="outputKg" placeholder="Quilogramas" readonly>
+            <input type="number" id="outputG" placeholder="Gramas" readonly>
+            <input type="number" id="outputL" placeholder="Litros" readonly>
+        </div>
+
+        <div class="options-section">
+            <h2>Valor:</h2>
+            <input type="number" id="valorInput">
+            <button onclick="converter()">Converter</button>
+        </div>
+
+        <div class="results-section">
+            <h2>Resultados:</h2>
+            <p id="resultKg"></p>
+            <p id="resultG"></p>
+            <p id="resultL"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

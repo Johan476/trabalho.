@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Comprimento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Comprimento</h1>
+        <div class="linha">
+            <div class="coluna">
+                <p>De</p>
+                <ul>
+                    <li onclick="definirValorDe('metros')">Metros</li>
+                    <li onclick="definirValorDe('centimetros')">Centímetros</li>
+                    <li onclick="definirValorDe('milimetros')">Milímetros</li>
+                    <li onclick="definirValorDe('polegadas')">Polegadas</li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <p>Para</p>
+                <ul>
+                    <li onclick="converterPara('metros')">Metros</li>
+                    <li onclick="converterPara('centimetros')">Centímetros</li>
+                    <li onclick="converterPara('milimetros')">Milímetros</li>
+                    <li onclick="converterPara('polegadas')">Polegadas</li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <p>Valor</p>
+                <input type="text" id="valorInput" placeholder="Digite o valor">
+            </div>
+            <div class="coluna">
+                <button onclick="converterComprimento()">Converter</button>
+            </div>
+            <div class="coluna">
+                <p>Resultado</p>
+                <input type="text" id="resultadoInput" readonly>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

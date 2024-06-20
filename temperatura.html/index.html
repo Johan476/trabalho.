@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Temperatura</h1>
+
+        <div class="input-section">
+            <h2>De:</h2>
+            <input type="number" id="inputCelsius" placeholder="Celsius">
+            <input type="number" id="inputFahrenheit" placeholder="Fahrenheit">
+            <input type="number" id="inputKelvin" placeholder="Kelvin">
+        </div>
+
+        <div class="output-section">
+            <h2>Para:</h2>
+            <input type="number" id="outputCelsius" placeholder="Celsius" readonly>
+            <input type="number" id="outputFahrenheit" placeholder="Fahrenheit" readonly>
+            <input type="number" id="outputKelvin" placeholder="Kelvin" readonly>
+        </div>
+
+        <div class="options-section">
+            <h2>Valor:</h2>
+            <input type="number" id="valorInput">
+            <button onclick="converter()">Converter</button>
+        </div>
+
+        <div class="results-section">
+            <h2>Resultados:</h2>
+            <p id="resultCelsius"></p>
+            <p id="resultFahrenheit"></p>
+            <p id="resultKelvin"></p>
+        </div>
+    </div>
+
+    <img src="temperature-background.jpg" alt="Background de Temperatura" class="temperature-background">
+    <img src="sun-logo.png" alt="Logo do Sol" class="sun-logo">
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Volume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Volume</h1>
+
+        <div class="input-section">
+            <h2>De:</h2>
+            <input type="number" id="inputLitros" placeholder="Litros">
+            <input type="number" id="inputMililitros" placeholder="Mililitros">
+            <input type="number" id="inputGaloes" placeholder="Galões">
+        </div>
+
+        <div class="output-section">
+            <h2>Para:</h2>
+            <input type="number" id="outputLitros" placeholder="Litros" readonly>
+            <input type="number" id="outputMililitros" placeholder="Mililitros" readonly>
+            <input type="number" id="outputGaloes" placeholder="Galões" readonly>
+        </div>
+
+        <div class="options-section">
+            <h2>Valor:</h2>
+            <input type="number" id="valorInput">
+            <button onclick="converter()">Converter</button>
+        </div>
+
+        <div class="results-section">
+            <h2>Resultados:</h2>
+            <p id="resultLitros"></p>

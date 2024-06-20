@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2 {
+    color: #039be5;
+    text-align: center;
+}
+
+.input-section, .output-section, .options-section, .results-section {
+    margin-bottom: 20px;
+}
+
+input[type="number"], button {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: calc(100% - 20px); /* Considerando padding */
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: #039be5;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0277bd;
+}
+
+.results-section p {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.temperature-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.sun-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: auto;
+    z-index: 2;
+}
